@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import Jumbotron from '../../components/Jumbotron/Jumbotron';
-
+import { Link } from 'react-router-dom';
 import "./Home.css"
-
-import Quizzes from '../../pages/Quizzes/Quizzes'
 
 
 class Home extends Component {
@@ -16,11 +13,15 @@ class Home extends Component {
 
 
         <div className="background">
-          <Jumbotron />
           <br></br>
-          <div id="p1"><p>Home Page</p></div>
+        <div id="p1"><p>Welcome to QuizMe</p></div>
           <br></br>
-          <div id="p2"><p>Other Stuff Here</p></div>
+          <br></br>
+          <br></br>
+          <br></br>
+        <div id="p2"><p>Visit the <Link to="/quizzes">View Quizzes</Link> page to take a quiz</p>
+          <br></br>
+          <p>Visit the <Link to="/newquiz">Create A Quiz</Link> page to create a quiz for others to take</p></div>
 
 
         </div>
