@@ -4,11 +4,15 @@
   "private": true,
   "dependencies": {
     "@types/auth0-js": "^8.11.2",
+    "ajv": "^6.5.2",
     "auth0-js": "^9.6.1",
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "mongoose": "^5.1.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-select": "^2.0.0-beta.7",
     "reactstrap": "^6.1.0",
     "simply_valid": "^3.2.3"
@@ -18,7 +22,8 @@
     "dev": "concurrently \"nodemon --ignore 'client/*' ./server.js\" \"npm run client\"",
     "client": "cd client && npm run start",
     "build": "cd client && npm run build",
-    "install": "cd client && npm install"
+    "install": "cd client && npm install",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "concurrently": "^3.6.0",
