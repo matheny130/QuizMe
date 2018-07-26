@@ -11,6 +11,8 @@
     width: 50%;
     margin-left: 7.5%;
     font-family: 'Gaegu', cursive;
+    background-image: url("../../images/paper.jpg");
+    color: black;
 }
 
 .labelMe{
@@ -18,19 +20,26 @@
     font-size: 24px;
     margin-left: 7.5%;
     color: whitesmoke;
-
 }
 
-.guide{
+.guide {
     font-family: 'Gaegu', cursive;
     text-align: left;
     color: whitesmoke;
     margin-left: 7.5%;
 }
 
-.dropBox{
+.dropBox {
     font-family: 'Gaegu', cursive;
     margin-left: 7.5%;
     width: 50%;
     margin-bottom:5px;
+
+}
+
+#button {
+    background-image: url("../../images/paper.jpg");
+    font-family: 'Gaegu', cursive;
+    color: black;
+    margin-left: 7.5%;
 }

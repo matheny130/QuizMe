@@ -1,16 +1,16 @@
-
-
 import React, { Component } from "react";
 import quizAPI from "../../utils/QuizAPI";
 import { Input, Button, Label} from 'reactstrap';
 import "./newQuiz.css"
 import Select from 'react-select';
 import history from "../../history";
+import Jumbotron from "../../components/Jumbotron/Jumbotron"
 
-const options  = [
+const options = [
   { value: 'true', label: 'Yes' },
-  { value: 'false', label: 'No' }
-]
+  { value: 'false', label: 'No' },
+];
+
 
 class newQuiz extends Component {
   constructor(props){
@@ -207,7 +207,8 @@ class newQuiz extends Component {
 
     return (
 
-      <div className= "background">
+      <div className="background">
+        <Jumbotron />
         <h2 className="guide">Create New Quiz</h2>
         <h5 className="guide">Please Keep Answers Short</h5>
         <form>
@@ -242,11 +243,12 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq1a1"
-          options={options}
-          placeholder="Yes or No"
-          onChange= {value => this.setState({correctq1a1:value})}
+            className="dropBox"
+            id="box"
+            name="correctq1a1"
+            options={options}
+            placeholder="Yes or No"
+            onChange= {value => this.setState({correctq1a1:value})}
           />
 
 
@@ -259,10 +261,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq1a2"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq1a2:value})}
+            className="dropBox"
+            id="box"
+            name="correctq1a2"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq1a2:value})}
           />
 
           <Input
@@ -274,10 +277,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq1a3"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq1a3:value})}
+            className="dropBox"
+            id="box"
+            name="correctq1a3"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq1a3:value})}
           />
 
 
@@ -290,10 +294,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq1a4"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq1a4:value})}
+            className="dropBox"
+            id="box"
+            name="correctq1a4"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq1a4:value})}
           />
 
           <Label for="correctAnswer" className="labelMe">What is the next Question?</Label>
@@ -315,10 +320,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq2a1"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq2a1:value})}
+            className="dropBox"
+            id="box"
+            name="correctq2a1"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq2a1:value})}
           />
 
           <Input
@@ -330,10 +336,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq2a2"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq2a2:value})}
+            className="dropBox"
+            id="box"
+            name="correctq2a2"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq2a2:value})}
           />
 
           <Input
@@ -345,10 +352,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq2a3"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq2a3:value})}
+            className="dropBox"
+            id="box"
+            name="correctq2a3"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq2a3:value})}
           />
 
           <Input
@@ -360,10 +368,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq2a4"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq2a4:value})}
+            className="dropBox"
+            id="box"
+            name="correctq2a4"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq2a4:value})}
           />
 
           <Label for="correctAnswer" className="labelMe">What is the next Question?</Label>
@@ -385,10 +394,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq3a1"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq3a1:value})}
+            className="dropBox"
+            id="box"
+            name="correctq3a1"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq3a1:value})}
           />
 
           <Input
@@ -400,10 +410,11 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq3a2"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq3a2:value})}
+            className="dropBox"
+            id="box"
+            name="correctq3a2"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq3a2:value})}
           />
 
           <Input
@@ -416,9 +427,10 @@ class newQuiz extends Component {
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
           className="dropBox"
-          name="correctq3a3"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq3a3:value})}
+            name="correctq3a3"
+            id="box"
+            options={options}
+            placeholder="Yes or No" onChange= {value => this.setState({correctq3a3:value})}
           />
 
           <Input
@@ -430,14 +442,18 @@ class newQuiz extends Component {
 
           <Label for="correctAnswer" className="labelMe">Is this the Correct Answer?</Label>
           <Select
-          className="dropBox"
-          name="correctq3a4"
-          options={options}
-          placeholder="Yes or No" onChange= {value => this.setState({correctq3a4:value})}
+            className="dropBox"
+            id="box"
+            bsstyle="primary"
+            name="correctq3a4"
+            options={options}
+            placeholder="Yes or No" onChange={value => this.setState({ correctq3a4: value })}
           />
-
+          <br></br>
           <Button
-
+            id="button"
+            bsstyle="primary"
+            className="btn-margin"
             onClick={this.handleFormSubmit}
           >
             Submit New Quiz
