@@ -4,7 +4,6 @@ import {
     CardTitle, CardSubtitle, Button, ButtonGroup,
     Container, Row, Col
 } from 'reactstrap';
-
 import "./Quiz.css";
 
 class Quiz extends Component {
@@ -59,21 +58,21 @@ class Quiz extends Component {
                                                     this.props.handleClick1(e);
                                                 }
                                                 }
-                                                    active={this.state.rSelected1 === 2} 
+                                                    active={this.state.rSelected1 === 2}
                                                     value={this.props.correctQ1A2}>{this.props.Q1A2}</Button>
                                                 <Button id="quizBtn" onClick={(e) => {
                                                     this.onRadioBtnClick1(3);
                                                     this.props.handleClick1(e);
                                                 }
                                                 }
-                                                    active={this.state.rSelected1 === 3} 
+                                                    active={this.state.rSelected1 === 3}
                                                     value={this.props.correctQ1A3}>{this.props.Q1A3}</Button>
                                                 <Button id="quizBtn" onClick={(e) => {
                                                     this.onRadioBtnClick1(4);
                                                     this.props.handleClick1(e);
                                                 }
                                                 }
-                                                    active={this.state.rSelected1 === 4} 
+                                                    active={this.state.rSelected1 === 4}
                                                     value={this.props.correctQ1A4}>{this.props.Q1A4}</Button>
                                             </ButtonGroup>
 

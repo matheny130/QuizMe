@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import history from "../../history";
 import QuizAPI from "../../utils/QuizAPI";
 import Quiz from "../../components/Quiz/Quiz";
+import Jumbotron from "../../components/Jumbotron/Jumbotron"
 
 let Q1Correct = "";
 let Q2Correct = "";
@@ -95,50 +96,51 @@ class QuizPage extends Component {
 
     handleClick1(event) {
         Q1Correct = event.target.value;
-        
+
         if (Q1Correct === "true"){
             score1 = 1
         }  else {
             score1 = 0
         }
-        
+
     }
 
 
     handleClick2(event) {
         Q2Correct = event.target.value;
-        
+
         if (Q2Correct === "true"){
             score2 = 1
         } else {
             score2 = 0
         }
-        
+
     }
 
     handleClick3(event) {
         Q3Correct = event.target.value;
-        
+
         if (Q3Correct === "true"){
             score3 = 1
         }  else {
             score3 = 0
         }
-        
+
     }
 
     componentDidMount() {
         QuizAPI.getQuiz(this.props.match.params.id)
             .then(res => {
-                this.setState({ quiz: res.data })             
+                this.setState({ quiz: res.data })
             })
             .catch(err => console.log(err))
     };
 
     render() {
         return (
-            
-                <div>
+
+            <div>
+                <Jumbotron />
                     <Quiz
                         quizTitle={this.state.quiz.quizTitle}
 
@@ -147,7 +149,7 @@ class QuizPage extends Component {
 
                         correctQ1A1={this.state.quiz.q1.answers.answer1.correct}
                         Q1A1={this.state.quiz.q1.answers.answer1.answer}
-                        
+
                         correctQ1A2={this.state.quiz.q1.answers.answer2.correct}
                         Q1A2={this.state.quiz.q1.answers.answer2.answer}
                         correctQ1A3={this.state.quiz.q1.answers.answer3.correct}
@@ -182,7 +184,7 @@ class QuizPage extends Component {
                     />
 
                 </div>
-            
+
         );
 
     };

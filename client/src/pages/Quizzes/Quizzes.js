@@ -4,7 +4,7 @@ import QuizBox from "../../components/QuizBox/QuizBox";
 import Container from "../../components/Container/Container";
 import QuizAPI from "../../utils/QuizAPI";
 import "./Quizzes.css"
-
+import Jumbotron from "../../components/Jumbotron/Jumbotron"
 
 class Quizzes extends Component {
   state = {
@@ -27,7 +27,9 @@ class Quizzes extends Component {
 
   render() {
     return (
-      <div className= "background">
+      <div className="background">
+        <Jumbotron />
+        <br></br>
         <Container>
           <div className="row">
             {this.state.quizzes.map(item => (
