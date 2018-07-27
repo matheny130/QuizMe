@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import history from "../../history";
 import QuizAPI from "../../utils/QuizAPI";
 import Quiz from "../../components/Quiz/Quiz";
-import Jumbotron from "../../components/Jumbotron/Jumbotron"
+import Jumbotron from "../../components/Jumbotron1/Jumbotron"
 
 let Q1Correct = "";
 let Q2Correct = "";

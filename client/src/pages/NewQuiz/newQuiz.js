@@ -4,7 +4,7 @@ import { Input, Button, Label} from 'reactstrap';
 import "./newQuiz.css"
 import Select from 'react-select';
 import history from "../../history";
-import Jumbotron from "../../components/Jumbotron/Jumbotron"
+import Jumbotron from "../../components/Jumbotron1/Jumbotron"
 
 const options = [
   { value: 'true', label: 'Yes' },

@@ -4,7 +4,7 @@ import QuizBox from "../../components/QuizBox/QuizBox";
 import Container from "../../components/Container/Container";
 import QuizAPI from "../../utils/QuizAPI";
 import "./Quizzes.css"
-import Jumbotron from "../../components/Jumbotron/Jumbotron"
+import Jumbotron from "../../components/Jumbotron1/Jumbotron"
 
 class Quizzes extends Component {
   state = {
