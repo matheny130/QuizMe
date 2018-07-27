@@ -19,9 +19,9 @@ class Home extends Component {
           <br></br>
           <br></br>
           <br></br>
-        <div id="p2"><p>Visit the <Link to="/quizzes">View Quizzes</Link> page to take a quiz</p>
+        <div id="p2"><p>QuizMe is a fun way to test your knowledge of any subject you want.</p>
           <br></br>
-          <p>Visit the <Link to="/newquiz">Create A Quiz</Link> page to create a quiz for others to take</p></div>
+          <p>Take the quizzes already submitted and submit one of your own for the rest of the class.</p></div>
 
 
         </div>
