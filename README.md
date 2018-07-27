@@ -1,4 +1,4 @@
-# Kitty Clicky Game
+# QuizMe
 
 ## Overview
 
@@ -7,13 +7,35 @@ An application that allows users to take quizzes to test their knowledge of a gi
 
 ## Instructions
 
-The app will render 12 different kitties to the screen. Click on one and the kitties rearrange randomly. Don't click the same kitty twice!
+QuizMe is an application that allows users to take quizzes about any subject they choose. The quizzes posted by users are available for others to take as well.
 
-![Kitty Clicky Game](./public/img/catgame.jpg)
+![QuizMe](./images/home.jpg)
 
-The app will keep track of your score. Your score will reset to 0 if you click the same kitty twice and the game will restart.
+Click the piece of paper in the upper right corner to choose whether you'd like to take a quiz or submit a quiz.
 
-![Game in Progress](./public/img/catgame2.jpg)
+![Navbar](./images/nav.jpg)
+
+If the user chooses to take a quiz they are taken to a page displaying all available quizzes. Click of the title of the quiz you'd like to take.
+
+![Quizzes](./images/quizzes.jpg)
+
+When a quiz is chosen the user is taken to a page displaying the questions and answer options.
+
+![Quiz](./images/quiz.jpg)
+
+The user chooses their answers and after clicking submit is told how many they got correct.
+
+![Results](./images/result.jpg)
+
+If the user chooses to submit a quiz they are taken to a form to fill out with questions and answer options.
+
+![New Quiz](./images/newquiz1.jpg)
+
+After completing the form the user clicks the submit button. The new quiz is then displayed with the other available quizzes.
+
+![New Quiz](./images/newquiz2.jpg)
+
+![New Quiz](./images/newquiz3.jpg)
 
 
 ## Technologies used
