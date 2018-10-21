@@ -38,7 +38,7 @@ After completing the form the user clicks the submit button. The new quiz is the
 ![New Quiz](./images/newquiz3.jpg)
 
 
-## Technologies used
+## Technologies Used
 
 * HTML5
 * MongoDB
